@@ -84,6 +84,7 @@ IF NOT EXIST "D:\home\site\tools\python36*" (
 
 :: 3. Install packages
 echo Pip install requirements...
+D:\home\site\tools\python.exe -m pip install git+https://github.com/smereczynski/isodate.git
 D:\home\site\tools\python.exe -m pip install -r "%DEPLOYMENT_TARGET%\requirements.txt"
 IF !ERRORLEVEL! NEQ 0 goto error
 
